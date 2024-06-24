@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "product-service"
+version = "0.1.0"
+description = ""
+authors = ["MohsinRaz3 <mohsinraz3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+sqlmodel = "^0.0.16"
+fastapi = "^0.111.0"
+aiokafka = "^0.10.0"
+psycopg = "^3.1.19"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
