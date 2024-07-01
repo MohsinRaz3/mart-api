@@ -10,7 +10,6 @@ class BaseProduct(SQLModel):
     
 class Product(BaseProduct, table=True):
     id: int | None = Field(default=None, primary_key=True)
-
 class GetProducts(SQLModel):
     id: int
     name: str
